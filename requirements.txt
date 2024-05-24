@@ -6,4 +6,4 @@ pandas
 import pytesseract
 import Image
 import  tkinter
-from tkinter import filedialog
+import filedialog
