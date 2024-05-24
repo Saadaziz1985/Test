@@ -3,6 +3,5 @@ snowflake-snowpark-python
 streamlit==1.31.1
 requests
 pandas
-import pytesseract
-import Image
-import tkinter
+Image
+tkinter
