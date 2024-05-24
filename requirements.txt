@@ -3,5 +3,5 @@ snowflake-snowpark-python
 streamlit==1.31.1
 requests
 pandas
-Image
+image
 tkinter
