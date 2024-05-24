@@ -4,7 +4,7 @@ import requests
 import pandas as pd
 from PIL import Image 
 from pytesseract import pytesseract
-import  tkinter as tk
+import tkinter as tk
 from tkinter import filedialog
 
 # Write directly to the app
