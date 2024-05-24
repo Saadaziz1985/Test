@@ -5,3 +5,5 @@ requests
 pandas
 from PIL import Image 
 from pytesseract import pytesseract
+pytesseract
+Image
