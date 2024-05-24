@@ -3,7 +3,5 @@ snowflake-snowpark-python
 streamlit==1.31.1
 requests
 pandas
-from PIL import Image 
-from pytesseract import pytesseract
 pytesseract
 Image
