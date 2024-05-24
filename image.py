@@ -3,6 +3,11 @@ import streamlit as st
 from snowflake.snowpark.functions import col
 import requests
 import pandas as pd
+import  tkinter as tk
+from tkinter import filedialog
+root = tk.Tk()
+root.withdraw()
+image_path = filedialog.askopenfilename()
 
 # Write directly to the app
 st.title(":apple: Example Streamlit App :apple:")
