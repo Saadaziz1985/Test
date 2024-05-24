@@ -3,13 +3,6 @@ import streamlit as st
 from snowflake.snowpark.functions import col
 import requests
 import pandas as pd
-import  tkinter as tk
-from tkinter import filedialog
-# Import python packages
-import streamlit as st
-from snowflake.snowpark.functions import col
-import requests
-import pandas as pd
 
 # Write directly to the app
 st.title(":apple: Example Streamlit App :apple:")
