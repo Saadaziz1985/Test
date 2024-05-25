@@ -18,4 +18,4 @@ if uploaded_file is not None:
   st.write('You selected:', y)
 
   df['Profit']=df['Profit'].sum()
-  st.bar_chart(df,x=x,y="Profit")
+  st.bar_chart(df,x=x,y=y)
