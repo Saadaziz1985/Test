@@ -13,9 +13,5 @@ if uploaded_file is not None:
   x=optionx
   st.write('You selected:', x)
 
-  optiony = st.selectbox('Your x-axis is?', (df.columns))
-  y=optiony
-  st.write('You selected:', y)
-
-  df['y']=df['y'].sum()
-  st.bar_chart(df,x=x,y=y)
+  df['Profit']=df['Profit'].sum()
+  st.bar_chart(df,x=x,y="Profit")
