@@ -3,4 +3,3 @@ pandas
 requests
 Image
 pytesseract
-tkinter
