@@ -2,8 +2,7 @@
 import pandas as pd
 import streamlit as st
 
-df = pd.read_csv(r"C:\Users\Saad Aziz\Downloads\Data Source Python\hotel_bookings.csv")  # read a CSV file inside the 'data" folder next to 'app.py'
-# df = pd.read_excel(...)  # will work for Excel files
-
-st.title("Hello world!")  # add a title
-st.write(df)  # visualize my dataframe in the Streamlit app
+spectra = st.file_uploader("upload file", type={"csv", "txt"})
+if spectra is not None:
+    spectra_df = pd.read_csv(spectra)
+st.write(spectra_df)
