@@ -10,7 +10,8 @@ if uploaded_file is not None:
   st.write(df)
 
   option = st.selectbox('Your x-axis is?', (df.columns))
+  x=option
   st.write('You selected:', option)
 
   df['Profit']=df['Profit'].sum()
-  st.bar_chart(df,x="Country",y="Profit")
+  st.bar_chart(df,x=x,y="Profit")
