@@ -1,13 +1,21 @@
-# Import python packages
 import streamlit as st
-import requests
 import pandas as pd
+from io import StringIO
 
-# Write directly to the app
-st.title("Hello! Example Streamlit App")
-st.write(
-    """Choose the fruits you want in your custome smoothie!
-    """)
+uploaded_file = st.file_uploader("Choose a file")
+if uploaded_file is not None:
+    # To read file as bytes:
+    bytes_data = uploaded_file.getvalue()
+    st.write(bytes_data)
 
-name_on_order = st.text_input('Name on Smoothie:')
-st.write('The name on your smoothie will be', name_on_order)
+    # To convert to a string based IO:
+    stringio = StringIO(uploaded_file.getvalue().decode("utf-8"))
+    st.write(stringio)
+
+    # To read file as string:
+    string_data = stringio.read()
+    st.write(string_data)
+
+    # Can be used wherever a "file-like" object is accepted:
+    dataframe = pd.read_csv(uploaded_file)
+    st.write(dataframe)
