@@ -19,4 +19,4 @@ if uploaded_file is not None:
   text = pytesseract.image_to_string(img) 
   
 # Displaying the extracted text 
-  print(text[:-1])
+  st.write(text)
