@@ -18,4 +18,4 @@ if uploaded_file is not None:
   df = df[columns]
 
   #y=df[y].sum()
-  st.bar_chart(df)
+  st.bar_chart(df,x=df[0],y=df[1])
