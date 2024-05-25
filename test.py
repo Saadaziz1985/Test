@@ -9,13 +9,13 @@ if uploaded_file is not None:
   df = pd.read_csv(uploaded_file)
   st.write(df)
 
-  optionx = st.selectbox('Your x-axis is?', (df.columns))
-  x=optionx
-  st.write('You selected:', x)
+  columns = st.multiselect("Columns:",df.columns)
+  filter = st.radio("Choose by:", ("inclusion","exclusion"))
 
-  optiony = st.selectbox('Your y-axis is?', (df.columns))
-  y=optiony
-  st.write('You selected:', y)
+  if filter == "exclusion":
+      columns = [col for col in df.columns if col not in columns]
+
+  df = df[columns]
 
   #y=df[y].sum()
-  st.bar_chart(df,x=x,y=y)
+  st.bar_chart(df)
