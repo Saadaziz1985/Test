@@ -17,7 +17,8 @@ if uploaded_file is not None:
 
   df = df[columns]
   x=df.iloc[0]
-  y=df.iloc[1]
+  y=df.iloc[1].sum()
+  df = df.groupby([df.iloc[0]][df.iloc[1].sum()
   st.write(df)
 
   #y=df[y].sum()
