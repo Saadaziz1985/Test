@@ -12,7 +12,7 @@ if uploaded_file is not None:
   
 # Providing the tesseract executable 
 # location to pytesseract library 
-  pytesseract.tesseract_cmd = path_to_tesseract 
+  #pytesseract.tesseract_cmd = path_to_tesseract 
   
 # Passing the image object to image_to_string() function 
 # This function will extract the text from the image 
