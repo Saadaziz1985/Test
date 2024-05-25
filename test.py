@@ -21,4 +21,4 @@ if uploaded_file is not None:
   st.write(df)
 
   #y=df[y].sum()
- # st.bar_chart(df,x=x,y=y)
+  st.bar_chart(df,x=x,y=y)
