@@ -4,7 +4,7 @@ import requests
 import pandas as pd
 
 # Write directly to the app
-st.title(":apple: Hello Example Streamlit App :apple:")
+st.title("Hello Example Streamlit App")
 st.write(
     """Choose the fruits you want in your custome smoothie!
     """)
