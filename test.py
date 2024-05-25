@@ -1,8 +1,24 @@
-# app.py, run with 'streamlit run app.py'
+import matplotlib.pyplot as plt
 import pandas as pd
 import streamlit as st
 
-spectra = st.file_uploader("upload file", type={"csv", "txt"})
-if spectra is not None:
-    spectra_df = pd.read_csv(spectra)
-st.write(spectra_df)
+st.title("Hello world!")
+
+uploaded_file = st.file_uploader("Choose a file")
+if uploaded_file is not None:
+  df = pd.read_csv(uploaded_file)
+  st.write(df)
+
+  # Add some matplotlib code !
+  fig, ax = plt.subplots()
+  df.hist(
+    bins=8,
+    column="Year",
+    grid=False,
+    figsize=(8, 8),
+    color="#86bf91",
+    zorder=2,
+    rwidth=0.9,
+    ax=ax,
+  )
+  st.write(fig)
