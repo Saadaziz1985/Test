@@ -2,6 +2,7 @@
 import streamlit as st
 import requests
 import pandas as pd
+import tkinter as tk
 
 # Write directly to the app
 st.title("Hello Example Streamlit App")
