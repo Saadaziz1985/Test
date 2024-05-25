@@ -16,9 +16,9 @@ if uploaded_file is not None:
       columns = [col for col in df.columns if col not in columns]
 
   df = df[columns]
-  x=df.iloc[:,:1]
-  y=df.iloc[:,:2].sum()
+  x = df[df.columns[0]]
+  y = df[df.columns[1]]
   st.write(df)
 
   #y=df[y].sum()
-  #st.bar_chart(df,x=x,y=y)
+  st.bar_chart(df,x=x,y=y)
