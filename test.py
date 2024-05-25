@@ -9,9 +9,7 @@ if uploaded_file is not None:
   df = pd.read_csv(uploaded_file)
   st.write(df)
 
-  option = st.selectbox(
-...     'How would you like to be contacted?',
-...     ('Email', 'Home phone', 'Mobile phone'))
+  option = st.selectbox('How would you like to be contacted?', ('Email', 'Home phone', 'Mobile phone'))
   st.write('You selected:', option)
 
   df['Profit']=df['Profit'].sum()
