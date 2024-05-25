@@ -17,5 +17,5 @@ if uploaded_file is not None:
   y=optiony
   st.write('You selected:', y)
 
-  y=df[y].sum()
+  #y=df[y].sum()
   st.bar_chart(df,x=x,y=y)
